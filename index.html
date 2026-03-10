@@ -1,7 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Building Services Engineering Portfolio</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0b3d91;
+      --secondary: #f5f7fa;
+      --accent: #1e90ff;
+      --text: #222;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--secondary);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav {
+      background: white;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .pdf-viewer {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--primary);
+      color: white;
+      margin-top: 40px;
+    }
+
+    .project-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .project-desc {
+      margin-top: 5px;
+      color: #555;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .button:hover {
+      background: #0d6efd;
+    }
+  </style>
+</head>
 <body>
-  <h1>Hello World</h1>
-  <p>This is my GitHub Pages site!</p>
+
+<header>
+  <h1>Your Name</h1>
+  <p>Building Services Engineering Portfolio</p>
+</header>
+
+<nav>
+  <a href="#bse-projects">BSE Projects</a>
+  <a href="#school-projects">School Projects</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#documents">Drawings & Documents</a>
+</nav>
+
+<section id="bse-projects">
+  <h2>Building Services Engineering Projects</h2>
+
+  <div class="card">
+    <div class="project-title">Office HVAC Design Project</div>
+    <div class="project-desc">
+      Full HVAC system design including duct sizing, load calculations, and plant sizing.
+    </div>
+
+    <!-- Embedded PDF drawing -->
+    <iframe class="pdf-viewer" src="documents/hvac-design.pdf"></iframe>
+  </div>
+
+</section>
+
+<section id="school-projects">
+  <h2>School Projects</h2>
+
+  <div class="card">
+    <div class="project-title">Thermodynamics Project</div>
+    <div class="project-desc">
+      Heat transfer analysis and system modelling.
+    </div>
+
+    <iframe class="pdf-viewer" src="documents/thermo-project.pdf"></iframe>
+  </div>
+
+</section>
+
+<section id="certificates">
+  <h2>Certificates & Transcripts</h2>
+
+  <div class="card">
+    <div class="project-title">Degree Certificate</div>
+
+    <iframe class="pdf-viewer" src="documents/degree-certificate.pdf"></iframe>
+  </div>
+
+  <div class="card">
+    <div class="project-title">Academic Transcript</div>
+
+    <iframe class="pdf-viewer" src="documents/transcript.pdf"></iframe>
+  </div>
+
+</section>
+
+<section id="documents">
+  <h2>AutoCAD Drawings & Technical Documents</h2>
+
+  <div class="card">
+    <div class="project-title">Ventilation Layout Drawing</div>
+
+    <iframe class="pdf-viewer" src="documents/ventilation-layout.pdf"></iframe>
+  </div>
+
+</section>
+
+<footer>
+  Contact: your.email@email.com | GitHub: github.com/yourusername
+</footer>
+
 </body>
 </html>
